@@ -1,0 +1,197 @@
+body{
+    margin: 0;
+    padding: 0%;
+}
+/* logo */
+.logo img {
+    width: 100px;
+    height: 50px;
+
+}
+header{
+    background-color: #fff;
+   align-items: center;
+   display: flex;
+   justify-content: space-around;
+}
+nav{
+    color: gray;
+    display: flex;
+    justify-content: space-around;
+}
+header ul{
+    text-decoration: none;
+    display: flex;
+    text-decoration: none;
+    list-style-type: none;
+}
+header ul li a {
+    list-style-type: none;
+    color: gray;
+    margin-left: 40px;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.sign_up{ 
+    align-items: center;
+    margin-right: 30px;
+    color: gray;
+}
+.sign_up button {
+    border: 1px solid blue;
+    color: blue;
+    box-shadow: 2px ;
+    background-color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+/* container du body */
+.container {
+    display: flex;
+    justify-content: space-around;
+    padding-left: 15px;
+    padding-left: 200px;
+   
+}
+.modifier {
+    /* box-shadow: 10px 5px 5px #6bff33; */
+    background-color:#FE7A15;
+     text-align: center;
+     border-radius: 15px;
+     width: 100px; 
+    font-size: 18px;
+     padding: 10px;
+}
+.annuler{
+        /* box-shadow: 10px 5px 5px #6bff33; */
+        background-color: #f90804;
+        text-align: center;
+        border-radius: 15px;
+        margin-left: 100px;
+        width: 100px; 
+        font-size: 18px;
+        padding: 10px;
+        
+}
+ .annuler a{
+    text-decoration: none;
+    color: black;
+}
+.modifier a{
+    text-decoration: none;
+    color: black;
+}
+.plan h1{
+color: gray;
+}
+.plan h2{
+    color: blue;
+    }
+
+
+/* image principale */
+.img img{
+ width: 800px;
+}
+
+
+/* liste billets */
+.container1{
+    background-color: blue;
+    color: #fff;
+    
+}
+.container1 p{
+    color: #fff; 
+}
+.container1 a{
+    background-color: black;
+    color: #fff;
+}
+
+/* input d'ajout de billets */
+input{
+    padding: 5px;
+    border: 1px solid #999;
+    outline: 0;
+    margin-top: 10px;
+}
+input:focus{
+    border: 1px solid #ffcb61;
+}
+input[type="submit"]{
+    margin-top: 25px;
+    background-color: #FE7A15;
+    border: 1px solid #999;
+    cursor: pointer;
+    color: #fff;
+    text-transform: uppercase;
+    width: 300px;
+}
+/* card liste */
+
+
+@import url('https://fonts.googleapis.com/css?family=PT+Serif:400,400i,700,700i');
+@import url('https://fonts.googleapis.com/css?family=Josefin+Slab:100,100i,300,300i,400,400i,600,600i,700,700i');
+
+
+:root{
+  --bg: #001D66;
+  --title: #00257F;
+  --para-text: rgba(0,0,0,0.67);
+  --title-font: 'Josefin Slab', serif;
+  --text-font: 'PT Serif', Serif;
+  --width: 20em;
+}
+.card{
+  background: var(--bg);
+  display: grid;
+  place-items: center;
+} 
+
+.card h1, h2, h3, h4, h5, h6{
+  color: var(--title);
+  text-transform: capitalize;
+  font-family: var(--title-font);
+} 
+
+section,
+aside,
+article,
+div,
+img{
+  box-sizing: border-box;
+}
+section img{
+  width: 100%;
+}
+section{
+  width: var(--width);
+  background: #fff;
+  padding: 20px;
+}
+section h3{
+  font-size: calc(var(--width)/10);
+}
+section p{
+  font-family: var(--text-font);
+  color: var(--para-text);
+  font-size: calc(var(--width)/20);
+}
+.date{
+  font-size: calc(var(--width)/25);
+}
+h1{
+  color: #fff;
+}
+
+section a{
+  text-decoration: none;
+  color: var(--bg);
+  font-family: var(--title-font);
+  font-weight: 700;
+  font-size: calc(var(--width)/23);
+}
+
