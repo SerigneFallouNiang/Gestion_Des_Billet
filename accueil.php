@@ -3,7 +3,7 @@
 $id=$_GET['id'];
                 include_once "connexion.php";
                 include "header.php";
-                $req = mysqli_query($con , "SELECT * FROM billets JOIN client ON billets.client_id=client.id WHERE client_id=$id");
+                $req = mysqli_query($con , "SELECT * ,billets.id AS idB FROM  billets JOIN client ON billets.client_id=client.id WHERE client_id=$id");
                 if(mysqli_num_rows($req) == 0){
                     echo "Il n'y a pas encore de billet ajouter !" ;
                 }else {
@@ -25,7 +25,7 @@ $id=$_GET['id'];
             <li>Statut : <?=$row['statut']?></li>
             </ul>
             <p>Veuillez vérifier toutes les informations avec attention. Bon voyage!</p>
-            <button class="modifier"><a href="modifier.php?id=<?=$row['id']?>">Modifier</a></button>
+            <button class="modifier"><a href="modifier.php?id=<?=$row['idB']?>">Modifier</a></button>
             <button class="annuler"><a href="supprimer.php?id=<?=$row['id']?>">Annuler</a></button>
     </div>
 <div class="img">
